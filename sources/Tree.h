@@ -7,15 +7,16 @@
 using std::vector;
 typedef long long ll;
 
-struct Node {
-    int left;
-    int right;
-    long long value;
-    bool isSet;
-    long long change;
-};
 
 struct Tree {
+    struct Node {
+        int left;
+        int right;
+        long long value;
+        bool isSet;
+        long long change;
+    };
+
     explicit Tree(size_t size, const vector <ll> &a);
 
     long long int min(int left, int right);
