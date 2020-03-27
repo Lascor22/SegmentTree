@@ -1,6 +1,7 @@
 #include "Tree.h"
 #include <limits.h>
 
+using std::vector
 typedef long long ll;
 
 Tree::Tree(size_t size, const vector <ll> &a) {
