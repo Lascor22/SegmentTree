@@ -4,8 +4,6 @@
 #include <cstddef>
 #include <vector>
 
-using std::vector;
-typedef long long ll;
 
 
 struct Tree {
@@ -17,32 +15,32 @@ struct Tree {
         long long change;
     };
 
-    explicit Tree(size_t size, const vector <ll> &a);
+    explicit Tree(size_t size, const std::vector <long long> &a);
 
     long long int min(int left, int right);
 
-    void add_on_segment(int left, int right, ll x);
+    void add_on_segment(int left, int right, long long x);
 
-    void set_on_segment(int left, int right, ll x);
+    void set_on_segment(int left, int right, long long x);
 
     ~Tree();
 
 private:
-    vector <Node> tree;
+    std::vector <Node> tree;
 
     int pow2(int n);
 
     bool isList(int v);
 
-    void treeBuild(vector <ll> &a, int i, int treeLeft, int treeRight);
+    void treeBuild(std::vector <long long> &a, int i, int treeLeft, int treeRight);
 
-    void _set(int left, int right, ll x, int v);
+    void _set(int left, int right, long long x, int v);
 
-    void _add(int left, int right, ll x, int v);
+    void _add(int left, int right, long long x, int v);
 
     void push(int v);
 
-    ll _min(int left, int right, int v);
+    long long _min(int left, int right, int v);
 };
 
 
