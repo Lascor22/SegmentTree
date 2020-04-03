@@ -37,9 +37,6 @@ int main() {
             cin >> left >> right >> x;
             ts.add_on_segment(left, right, x);
         }
-        if (cnt == 11) {
-            return 0;
-        }
     }
     return 0;
 }
